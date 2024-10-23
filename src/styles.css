@@ -1,0 +1,47 @@
+/* App Container */
+.app-container {
+  padding: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Control Section for dropdowns */
+.controls {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  margin-right: 20px;
+}
+
+/* Kanban Board Layout */
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kanban-column {
+  width: 30%;
+}
+
+/* Ticket Card Styling */
+.ticket-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(173, 170, 170);
+}
+
+/* Priority classes for coloring */
+.urgent { background-color: #ffcccc; }
+.high { background-color: #ffe6cc; }
+.medium { background-color: #ffffcc; }
+.low { background-color: #e6ffe6; }
+.no-priority { background-color: #94949494; }
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .kanban-board {
+    flex-direction: column;
+  }
+}
